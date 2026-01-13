@@ -1,0 +1,222 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c28;
+    color: #e0e0e0;
+}
+
+/* Navigation */
+header {
+    background-color: #2b2b3b;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+#rechercher
+{
+    padding: 10px; 
+}
+a
+{
+    text-decoration: none;
+}
+#AnimeSrch
+{
+    margin-bottom: 50px;
+font-size: 50px;
+}
+header nav .logo a {
+    color: #ff6f91;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav .nav-links {
+    list-style: none
+    
+}
+
+header nav .nav-links li {
+    margin-left: 25px
+}
+
+header nav .nav-links li a {
+    color: #e0e0e0;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav .nav-links li a:hover {
+    color: #ff6f91;
+}
+.filter
+{
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+}
+/* Hero Section */
+.hero {
+  
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: #ff6f91;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+    color: #d9d9d9;
+}
+
+.hero button {
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #ff4a75;
+}
+
+/* Popular Anime Section */
+.popular-animes {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.popular-animes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ff6f91;
+    animation: slideUp 1s ease-out;
+}
+
+.anime-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; /* Permet aux cartes de revenir à la ligne si nécessaire */
+    margin: 0 auto;
+}
+
+.anime-card {
+    background-color: #2b2b3b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 220px; /* Limite la largeur de chaque carte */
+    text-align: center;
+}
+
+.anime-card img {
+    width: 150px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.anime-card h3 {
+    margin-top: 12px;
+    font-size: 1.2rem;
+    color: #ff6f91;
+}
+
+.anime-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Section */
+.search {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.search input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+    color: #333;
+}
+
+.search input:focus {
+    border-color: #ff6f91;
+}
+
+.search button {
+    padding: 30px 20px;
+    font-size: 1rem;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #ff4a75;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #2b2b3b;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(30);
+        opacity: 0;
+    }
+}

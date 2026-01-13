@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Together - Niveau 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="ui">
+        <div id="level">Level: 4</div>
+        <div id="timer"></div>
+        <div id="player1-info">Player 1: <span id="player1-position"></span></div>
+        <div id="player2-info">Player 2: <span id="player2-position"></span></div>
+    </div>
+
+    <script>
+
+
+        // Initialisation des variables globales
+        window.level = 4;
+
+        // Définition des joueurs
+        window.players = [
+            { x: 50, y: 800, width: 20, height: 50, color: 'red', velocityY: 0, jumping: false },
+            { x: 100, y: 800, width: 20, height: 50, color: 'blue', velocityY: 0, jumping: false }
+        ];
+
+        // Définition des plateformes fixes
+        window.platformsGround = [
+            { x: 0, y: 850, width: 300, height: 120, color: 'green' },
+            { x: 1200, y: 850, width: 1200, height: 120, color: 'green' }
+        ];
+
+        // Définition des plateformes mouvantes (après avoir défini la hauteur du canvas)
+        window.movingPlatforms = [
+            { x: 200, y: 720 + 80, width: 100, height: 20, color: 'purple', moving: true, direction: 'horizontal', speed: 2, minX: 200, maxX: 600 },
+            { x: 400, y: 660 + 80, width: 100, height: 20, color: 'orange', moving: true, direction: 'horizontal', speed: 2.5, minX: 400, maxX: 900 },
+            { x: 600, y: 600 + 30, width: 100, height: 20, color: 'blue', moving: true, direction: 'horizontal', speed: 3, minX: 600, maxX: 1200 }
+        ];
+
+        // Définition des murs
+        window.walls = [
+            { x: 51200, y: 675, width: 20, height: 180, color: 'gray' },
+            { x: 21600, y: 530, width: 270, height: 20, color: 'brown' }
+        ];
+
+        // Définition des trampolines
+        window.trampolines = [
+            { x: 12240, y: 840, width: 50, height: 10, color: 'red', bounce: -10 },
+            { x: 21000, y: 830, width: 80, height: 20, color: 'pink', bounce: -20 }
+        ];
+
+        // Définition des boutons et portes
+        window.buttons = [
+            { x: window.innerWidth - 150, y: window.platformsGround[0].y - 80, width: 80, height: 80, color: 'cyan', activated:false },
+            { x :12200 , y :790 , width :30 , height :60 , color :'orange' , activated:true }
+        ];
+
+        window.doors = [
+            { x :1400 , y :window.platformsGround[0].y -100 , width :50 , height :100 , color :'brown' , open:true }
+        ];
+    </script>
+
+    <!-- Lien vers le fichier de script pour le jeu -->
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Downloads\\Pong$ (1)\\Pong$\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{897E7AFF-0761-4070-B187-3AE95CD81FB8}|Pong$\\Pong$.csproj|c:\\users\\admin\\downloads\\pong$ (1)\\pong$\\pong$\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{897E7AFF-0761-4070-B187-3AE95CD81FB8}|Pong$\\Pong$.csproj|solutionrelative:pong$\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{897E7AFF-0761-4070-B187-3AE95CD81FB8}|Pong$\\Pong$.csproj|C:\\Users\\Admin\\Downloads\\Pong$ (1)\\Pong$\\pong$\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{897E7AFF-0761-4070-B187-3AE95CD81FB8}|Pong$\\Pong$.csproj|solutionrelative:pong$\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{897E7AFF-0761-4070-B187-3AE95CD81FB8}|Pong$\\Pong$.csproj|c:\\users\\admin\\downloads\\pong$ (1)\\pong$\\pong$\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{897E7AFF-0761-4070-B187-3AE95CD81FB8}|Pong$\\Pong$.csproj|solutionrelative:pong$\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{897E7AFF-0761-4070-B187-3AE95CD81FB8}|Pong$\\Pong$.csproj|c:\\users\\admin\\downloads\\pong$ (1)\\pong$\\pong$\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{897E7AFF-0761-4070-B187-3AE95CD81FB8}|Pong$\\Pong$.csproj|solutionrelative:pong$\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{897E7AFF-0761-4070-B187-3AE95CD81FB8}|Pong$\\Pong$.csproj|C:\\Users\\Admin\\Downloads\\Pong$ (1)\\Pong$\\pong$\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{897E7AFF-0761-4070-B187-3AE95CD81FB8}|Pong$\\Pong$.csproj|solutionrelative:pong$\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Pong$ (1)\\Pong$\\Pong$\\Program.cs",
+              "RelativeDocumentMoniker": "Pong$\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\Pong$ (1)\\Pong$\\Pong$\\Program.cs",
+              "RelativeToolTip": "Pong$\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T20:26:40.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Pong$ (1)\\Pong$\\Pong$\\Form2.cs",
+              "RelativeDocumentMoniker": "Pong$\\Form2.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\Pong$ (1)\\Pong$\\Pong$\\Form2.cs",
+              "RelativeToolTip": "Pong$\\Form2.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAwwEEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T20:22:42.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Pong$ (1)\\Pong$\\Pong$\\Form2.cs",
+              "RelativeDocumentMoniker": "Pong$\\Form2.cs",
+              "ToolTip": "C:\\Users\\cagog\\source\\repos\\Pong$\\Pong$\\Form2.cs [Conception]",
+              "RelativeToolTip": "..\\..\\..\\..\\cagog\\source\\repos\\Pong$\\Pong$\\Form2.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T20:22:33.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Pong$ (1)\\Pong$\\Pong$\\Form1.cs",
+              "RelativeDocumentMoniker": "Pong$\\Form1.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\Pong$ (1)\\Pong$\\Pong$\\Form1.cs",
+              "RelativeToolTip": "Pong$\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T19:53:58.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\Pong$ (1)\\Pong$\\Pong$\\Form1.cs",
+              "RelativeDocumentMoniker": "Pong$\\Form1.cs",
+              "ToolTip": "C:\\Users\\cagog\\source\\repos\\Pong$\\Pong$\\Form1.cs [Conception]",
+              "RelativeToolTip": "..\\..\\..\\..\\cagog\\source\\repos\\Pong$\\Pong$\\Form1.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T19:53:31.669Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

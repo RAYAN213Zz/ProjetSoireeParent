@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    background-color: #f0f0f0;
+    width: 42%;
+    transform: scale(3.5); 
+    transform-origin: 0 0; 
+   padding: 1px;
+}
+
+#ui {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+#level, #timer {
+    font-size: 56px;
+}

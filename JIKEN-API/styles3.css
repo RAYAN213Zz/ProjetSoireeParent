@@ -1,0 +1,120 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c28;
+    color: #e0e0e0;
+}
+
+/* Navigation */
+header {
+    background-color: #2b2b3b;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header nav .logo a {
+    color: #ff6f91;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Anime List Section */
+.anime-list {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+#animeListUL {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    list-style-type: none;
+}
+
+#animeListUL li {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#animeListUL li:hover {
+    transform: scale(1.05);
+}
+
+#animeListUL li img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#animeListUL li strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #ff6f91;
+}
+
+#animeListUL li p {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2b2b3b;
+    color: white;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Button (if needed for further interactions) */
+button {
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 3px;
+}
+
+button:hover {
+    background-color: #ff4e7d;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

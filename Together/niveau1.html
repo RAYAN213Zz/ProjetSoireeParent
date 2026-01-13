@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Together - Niveau 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="ui">
+        <div id="level">Level: 1</div>
+        <div id="timer"></div>
+        <div id="player1-info">Player 1: <span id="player1-position"></span></div>
+        <div id="player2-info">Player 2: <span id="player2-position"></span></div>
+    </div>
+
+    <script>
+        // Initialisation des variables globales
+        window.level = 1;
+
+        // Définition des joueurs
+        window.players = [
+            { x: 50, y: 800, width: 20, height: 50, color: 'red', velocityY: 0, jumping: false },
+            { x: 100, y: 800, width: 20, height: 50, color: 'blue', velocityY: 0, jumping: false }
+        ];
+
+        // Définition des plateformes fixes
+        window.platformsGround = [
+            { x: 0, y: 850, width: 820, height: 120, color: 'green' },
+            { x: 950, y: 850, width: 1920, height: 120, color: 'green' }
+        ];
+
+        // Définition des portes
+        window.doors = [
+            { x: 1800, y: 750, width: 50, height: 100, color: 'brown', open: true }
+        ];
+
+        // Pas de plateformes mouvantes, murs ou trampolines dans le niveau 1
+        window.movingPlatforms = [];
+        window.walls = [];
+        window.trampolines = [];
+        window.buttons = [];
+    </script>
+
+    <script src="game.js"></script>
+</body>
+</html>

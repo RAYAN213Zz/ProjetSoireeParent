@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 50 des Animes All Time</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Anime App</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="anime-list" id="animeList">
+        <!-- La liste des animes sera affichée ici dynamiquement -->
+        <ul id="animeListUL"></ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Anime App</p>
+    </footer>
+
+    <script>
+        // Fonction pour récupérer le top 50 des animes
+        async function fetchTopAnime() {
+            try {
+                // Récupère les 50 meilleurs animes
+                const response = await fetch('https://api.jikan.moe/v4/top/anime?limit=25');
+                const data = await response.json();
+
+                if (!data || !data.data) {
+                    throw new Error("Aucun anime trouvé dans la réponse");
+                }
+
+                console.log("Réponse brute de l'API:", data); // Vérifie la structure des données
+
+                const animeListUL = document.getElementById("animeListUL");
+
+                // Efface la liste existante avant de l'afficher
+                animeListUL.innerHTML = "";
+
+                // Affiche les animes du top 50
+                data.data.forEach(anime => {
+                    const listItem = document.createElement("li");
+                    listItem.innerHTML = `
+                        <img src="${anime.images.jpg.image_url}" alt="${anime.title}" width="100" height="150">
+                        <strong>${anime.title}</strong>
+                        <p>Score: ${anime.score}</p>
+                    `;
+                    animeListUL.appendChild(listItem);
+                });
+
+            } catch (error) {
+                console.error("Erreur lors du chargement des animes :", error);
+            }
+        }
+
+        // Appel de la fonction pour afficher le Top 50 des animes
+        fetchTopAnime();
+    </script>
+</body>
+</html>

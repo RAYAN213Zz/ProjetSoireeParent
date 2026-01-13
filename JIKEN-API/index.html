@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Anime App</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Top Anime</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Découvrez les Meilleurs Animes</h1>
+            <p>Explorez, Suivez et Partagez vos séries préférées.</p>
+            <button onclick="window.location.href='#'">Commencer l'Aventure</button>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search">
+        <h2 id="AnimeSrch">Rechercher un Anime</h2>
+        <input type="text" id="searchInput" placeholder="Tapez ici pour rechercher...">
+        <button onclick="searchAnime()" id="rechercher">Rechercher</button>
+    </section>
+
+    <!-- Filter by Genre -->
+    <section class="filter">
+        <h2>Filtrer par Genre</h2>
+        <select id="genreFilter" onchange="filterAnimes()">
+            <option value="">Tous les Genres</option>
+            <option value="Action">Action</option>
+            <option value="Adventure">Aventure</option>
+            <option value="Comedy">Comédie</option>
+            <option value="Drama">Drame</option>
+            <option value="Fantasy">Fantasy</option>
+            <!-- Vous pouvez ajouter d'autres genres ici -->
+        </select>
+    </section>
+
+    <!-- Popular Anime Section -->
+    <section class="popular-animes">
+        <h2>Animes Populaires</h2>
+        <div class="anime-list" id="animeList">
+            <!-- Anime cards will be inserted here dynamically -->
+        </div>
+        <button id="loadMore" onclick="loadMoreAnimes()">Afficher Plus</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Anime App</p>
+    </footer>
+
+    <script>
+        let allAnimes = []; // Pour stocker tous les animes récupérés
+        let displayedAnimes = 0; // Compteur d'animes affichés
+        let filteredAnimes = []; // Liste des animes filtrés
+
+        // Fonction pour récupérer les animes populaires
+        async function fetchPopularAnime() {
+            try {
+                const response = await fetch("https://api.jikan.moe/v4/top/anime");
+                const data = await response.json();
+                allAnimes = data.data; // Stocke tous les animes pour un filtrage ultérieur
+                filteredAnimes = allAnimes; // Initialiser filteredAnimes avec tous les animes
+                displayAnimes(displayedAnimes, 10); // Affiche les premiers 10 animes
+            } catch (error) {
+                console.error("Erreur lors du chargement des animes populaires :", error);
+            }
+        }
+
+        // Fonction pour afficher les animes
+        function displayAnimes(startIndex, count) {
+            const animeList = document.getElementById("animeList");
+
+            // Affiche les animes à partir de l'index donné
+            for (let i = startIndex; i < startIndex + count && i < filteredAnimes.length; i++) {
+                const anime = filteredAnimes[i];
+                const animeCard = document.createElement("div");
+                animeCard.classList.add("anime-card");
+
+                animeCard.innerHTML = `
+                    <a href="details.html?id=${anime.mal_id}">
+                        <img src="${anime.images.jpg.image_url}" alt="${anime.title}">
+                        <h3>${anime.title}</h3>
+                    </a>
+                `;
+                animeList.appendChild(animeCard);
+            }
+            displayedAnimes += count;
+
+            // Si on a affiché tous les animes, on cache le bouton "Afficher Plus"
+            if (displayedAnimes >= filteredAnimes.length) {
+                document.getElementById("loadMore").style.display = "none";
+            }
+        }
+
+        // Fonction pour charger plus d'animes
+        function loadMoreAnimes() {
+            displayAnimes(displayedAnimes, 10); // Affiche 10 animes supplémentaires
+        }
+
+        // Fonction de recherche d'anime
+        async function searchAnime() {
+            const query = document.getElementById("searchInput").value;
+            if (!query) return;
+
+            try {
+                const response = await fetch(`https://api.jikan.moe/v4/anime?q=${query}`);
+                const data = await response.json();
+                filteredAnimes = data.data; // Réinitialise les animes filtrés avec les résultats de la recherche
+                document.getElementById("animeList").innerHTML = ""; // Réinitialise la liste
+                displayedAnimes = 0; // Réinitialise le compteur
+                displayAnimes(displayedAnimes, 10); // Affiche les résultats de la recherche
+            } catch (error) {
+                console.error("Erreur lors de la recherche des animes :", error);
+            }
+        }
+
+        // Fonction de filtrage par genre
+        function filterAnimes() {
+            const genre = document.getElementById("genreFilter").value;
+
+            // Filtrage basé sur le genre
+            filteredAnimes = allAnimes.filter(anime => {
+                return genre ? anime.genres.some(g => g.name === genre) : true;
+            });
+
+            // Réinitialise la liste et le compteur d'affichage
+            document.getElementById("animeList").innerHTML = "";
+            displayedAnimes = 0;
+            displayAnimes(displayedAnimes, 10); // Affiche les premiers 10 animes filtrés
+            document.getElementById("loadMore").style.display = "inline-block"; // Affiche le bouton "Afficher Plus"
+        }
+
+        // Initialisation de la page
+        fetchPopularAnime();
+    </script>
+</body>
+
+</html>

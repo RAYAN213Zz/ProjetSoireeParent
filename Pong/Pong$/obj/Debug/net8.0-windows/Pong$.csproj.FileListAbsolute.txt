@@ -1,0 +1,34 @@
+C:\Users\cagog\source\repos\Pong$\Pong$\bin\Debug\net8.0-windows\Pong$.exe
+C:\Users\cagog\source\repos\Pong$\Pong$\bin\Debug\net8.0-windows\Pong$.deps.json
+C:\Users\cagog\source\repos\Pong$\Pong$\bin\Debug\net8.0-windows\Pong$.runtimeconfig.json
+C:\Users\cagog\source\repos\Pong$\Pong$\bin\Debug\net8.0-windows\Pong$.dll
+C:\Users\cagog\source\repos\Pong$\Pong$\bin\Debug\net8.0-windows\Pong$.pdb
+C:\Users\cagog\source\repos\Pong$\Pong$\obj\Debug\net8.0-windows\Pong_.Form1.resources
+C:\Users\cagog\source\repos\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.csproj.GenerateResource.cache
+C:\Users\cagog\source\repos\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cagog\source\repos\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.AssemblyInfoInputs.cache
+C:\Users\cagog\source\repos\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.AssemblyInfo.cs
+C:\Users\cagog\source\repos\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.csproj.CoreCompileInputs.cache
+C:\Users\cagog\source\repos\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.dll
+C:\Users\cagog\source\repos\Pong$\Pong$\obj\Debug\net8.0-windows\refint\Pong$.dll
+C:\Users\cagog\source\repos\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.pdb
+C:\Users\cagog\source\repos\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.genruntimeconfig.cache
+C:\Users\cagog\source\repos\Pong$\Pong$\obj\Debug\net8.0-windows\ref\Pong$.dll
+C:\Users\cagog\source\repos\Pong$\Pong$\obj\Debug\net8.0-windows\Pong_.Form2.resources
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\bin\Debug\net8.0-windows\Pong$.exe
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\bin\Debug\net8.0-windows\Pong$.deps.json
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\bin\Debug\net8.0-windows\Pong$.runtimeconfig.json
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\bin\Debug\net8.0-windows\Pong$.dll
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\bin\Debug\net8.0-windows\Pong$.pdb
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\obj\Debug\net8.0-windows\Pong_.Form1.resources
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\obj\Debug\net8.0-windows\Pong_.Form2.resources
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.AssemblyInfoInputs.cache
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.AssemblyInfo.cs
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.dll
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\obj\Debug\net8.0-windows\refint\Pong$.dll
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.pdb
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\obj\Debug\net8.0-windows\Pong$.genruntimeconfig.cache
+C:\Users\Admin\Downloads\Pong$ (1)\Pong$\Pong$\obj\Debug\net8.0-windows\ref\Pong$.dll
